@@ -1,0 +1,15 @@
+<p>This is my about page, I am learning Django.</p>
+
+<h1>Name : {{ Name }}</h1>
+<h1>Age : {{ Age }}</h1>
+
+{% if Age > 18 %}
+    <p>They can vote!</p>
+{% else %}
+    <p>They cannot vote</p>
+{% endif %}
+
+{% for m in fav_fruits %}
+    <br> {{ m }}
+{% endfor %}
+

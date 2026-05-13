@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'nav.html' %}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+            <div class="card shadow p-4">
+
+                <h2 class="text-center mb-4">Product Details</h2>
+
+                <div class="mb-3">
+                    <h5>ID</h5>
+                    <p class="fs-5">{{ product.id }}</p>
+                </div>
+
+                <div class="mb-3">
+                    <h5>Name</h5>
+                    <p class="fs-5">{{ product.name }}</p>
+                </div>
+
+                <div class="mb-3">
+                    <h5>Description</h5>
+                    <p class="fs-5">{{ product.description }}</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
