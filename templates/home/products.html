@@ -24,11 +24,30 @@
                         ${{ product.price }}
                     </h6>
 
-                    <button class="btn btn-primary w-100 mt-3">
-                     <a href="{% url 'product' product.id %}" class="text-white text-decoration-none">View Product</a>
-                        
-                     
-                    </button>
+        <div class="d-flex gap-3 mt-3">
+
+            <a 
+                href="{% url 'product' product.id %}" 
+                class="text-primary text-decoration-none fw-semibold"
+            >
+                View
+            </a>
+
+            <a 
+                href="{% url 'update_product' product.id %}" 
+                class="text-warning text-decoration-none fw-semibold"
+            >
+                Edit
+            </a>
+
+            <a 
+                href="{% url 'delete_product' product.id %}" 
+                class="text-danger text-decoration-none fw-semibold"
+            >
+                Delete
+            </a>
+
+        </div>
                 </div>
 
             </div>
